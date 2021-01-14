@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>殺很大</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="navbar-brand mb-0">
+            <i class="fas fa-mountain fa-lg mr-1 " style="color: darkgreen;"></i>Stephen King</div>
+        <div class="ml-auto">
+            <div class="dropdown">
+                <a class="btn bnt-black bg-cart" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-danger badge-pill bg-cart-num">12</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" style="width: 300px;" aria-labelledby="dropdownMenuLink">
+                    <div class="px-4 py-3">
+                        <div class="h6">已選擇商品</div>
+                        <table class="table custom-table">
+                            <tbody>
+                                <tr>
+                                    <td> <a href="#" class="text-dark" data-toggle="modal" data-target="#removemodal" data-backdrop='static'><i class="far fa-trash-alt"></i></a></td>
+                                    <td id="test">玉山</td>
+                                    <td>1人</td>
+                                    <td>$4,990</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="#" class="text-dark" data-toggle="modal" data-target="#removemodal"><i class="far fa-trash-alt"></i></a></td>
+                                    <td>雪山</td>
+                                    <td>3人</td>
+                                    <td>$15,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary btn-sm btn-block">結帳去</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-images d-flex align-items-end">
+        <div class="container">
+            <div class="bg-jumbotron-banner">
+                <h1 class="display-4 font-weight-bolder text-center">親近大自然，享受一切</h1>
+                <p class="lead font-weight-bolder text-center"> The first blow is half the battle.</p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-2">
+                    <div class="list-group stickytop" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-golden" role="tab" aria-controls="golden"><i
+                                class="fab fa-adversal fa-md mr-1"></i>特銷專區</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                            href="#list-gift" role="tab" aria-controls="gift"><i
+                                class="fas fa-leaf fa-md mr-1"></i>超值挑戰組合</a>
+                        <a class="list-group-item list-group-item-action disabled" id="list-messages-list"
+                            data-toggle="list" href="#list-video" role="tab" aria-controls="video">百岳</a>
+                        <a class="list-group-item list-group-item-action disabled" id="list-settings-list"
+                            data-toggle="list" href="#list-pet" role="tab" aria-controls="pet">一日遊</a>
+                        <a class="list-group-item list-group-item-action disabled" id="list-settings-list"
+                            data-toggle="list" href="#list-living" role="tab" aria-controls="living">親子遊</a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="input-group" style="width: 300px;">
+                        <input type="text" placeholder="search..." class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-warning">search</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-golden" role="tabpanel"
+                            aria-labelledby="list-golden-list">
+                            <div class="row mt-3">
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-0 box-shadow">
+                                        <img src="https://picsum.photos/id/904/1920/1080" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div class="mb-2">
+                                                <h5 class="card-title">拉拉山</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="btn-group btn-group-sm">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary font-small">1天</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary font-small">2天</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-0 box-shadow">
+                                        <img src="https://picsum.photos/id/905/1920/1080" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div class="mb-2">
+                                                <h5 class="card-title">雪山</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="btn-group btn-group-sm">
+                                                    <button type="button" class="btn btn-outline-secondary">3天</button>
+                                                    <button type="button" class="btn btn-outline-secondary">4天</button>
+                                                    <button type="button" class="btn btn-outline-secondary">5天</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-0 box-shadow text-small">
+                                        <img src="https://picsum.photos/id/906/1920/1080" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div class="mb-2">
+                                                <h5 class="card-title">玉山</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.Some quick example text to build
+                                                    on
+                                                    the card title and make
+                                                    up the bulk of the card's content.Some quick example text to build
+                                                    on
+                                                </p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="btn-group btn-group-sm">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary btn-sm">3天</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary btn-sm">4天</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-0 box-shadow text-small">
+                                        <img src="https://picsum.photos/id/401/1920/1080" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div class="mb-2">
+                                                <h5 class="card-title">熱氣球之旅</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.Some quick example text to build
+                                                    on
+                                                    the card title and make
+                                                    up the bulk of the card's content.Some quick example text to build
+                                                    on
+                                                </p>
+                                            </div>
+                                            <div class="text-center">
+                                                <button class="btn btn-outline-secondary w-100 disabled"
+                                                    style="pointer-events: none;">數量已滿</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-0 box-shadow text-small">
+                                        <img src="https://picsum.photos/id/543/1920/1080" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div class="mb-2">
+                                                <h5 class="card-title">阿里山輕旅</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.Some quick example text to build
+                                                    on
+                                                    the card title and make
+                                                    up the bulk of the card's content.Some quick example text to build
+                                                    on
+                                                </p>
+                                            </div>
+                                            <div class="text-center">
+                                                <button class="btn btn-outline-secondary w-100">搶購去</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="list-gift" role="tabpanel" aria-labelledby="list-profile-list">
+                            <div class="row mt-3">
+                                <div class="col-lg-4">
+                                    <div class="card h-100 border-0 box-shadow">
+                                        <img src="https://picsum.photos/id/918/1920/1080" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div class="mb-2">
+                                                <h5 class="card-title">大霸尖山七日挑戰</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="btn-group btn-group-sm">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary font-small">重裝</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary font-small">輕重裝</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            ...</div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            ...</div>
+                    </div>
+
+                    <nav aria-label="Page navigation" class="mt-3">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">特銷專區</a></li>
+                <li class="breadcrumb-item active" aria-current="page">山友精選</li>
+            </ol>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="sticky-top">
+                    <h1 class="h3">踏青首選<span class="text-muted h5">(玉山王推薦)</span></h1>
+                    <div class="d-flex">
+                        <p class='text-muted'><del>售價$6,999</del></p>
+                        <P class="text-danger h5 ml-auto">網路價 NT$ 5,520</P>
+                    </div>
+                    <hr>天數：
+                    <div class="btn-group btn-group-toggle btn-group-sm " data-toggle="buttons">
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="dayoptions" id="dayoption1"> 3日
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="dayoptions" id="dayoption2"> 5日
+                        </label>
+                        <label class="btn btn-outline-secondary" style="pointer-events: none;">
+                            <input type="radio" name="dayoptions" id="dayoption3" disabled> 7日
+                        </label>
+                    </div>
+                    <div class="input-group my-3">
+                        <select class="custom-select" id="numselect">
+                            <option selected>Choose...</option>
+                            <option value="1">1人</option>
+                            <option value="2">2人</option>
+                            <option value="3">3人以上</option>
+                        </select>
+                        <div class="input-group-append ml-1">
+                            <button class="btn btn-primary btn-sm">加入購物車</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="h2">典藏精選</div>
+                <p>生活在這樣的環境裡，好像沒有什麼不往山上走走，親近美麗山林的道理。 而說到爬山，那種兩三千公尺的大山實在太具挑戰</p>
+                <p class="text-center text-success">親近大自然</p>
+                <img src="https://picsum.photos/id/922/1920/1080" class="mb-3 w-100" alt="">
+                <p class="text-center text-success">親近大自然</p>
+                <img src="https://picsum.photos/id/932/1920/1080" class="mb-3 w-100" alt="">
+                <p class="text-center text-success">親近大自然</p>
+                <img src="https://picsum.photos/id/912/1920/1080" class="mb-3 w-100" alt="">
+                <blockquote class="blockquote bg-light">
+                    <p class="mb-0 text-center">購物說明</p>
+                    <footer class="blockquote-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        explicabo fugit laboriosam quisquam nisi repellat delectus vel doloremque magni itaque
+                        praesentium id vero dolorem necessitatibus consequuntur eum, eveniet distinctio commodi<cite
+                            title="Source Title"> -站長</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section>
+        <div class="container  my-5">
+            <h1 class="text-secondary text-center mb-3">親近大自然，付款流程</h1>
+            <div class="row">
+                <div class="col-4">
+                    <div class="alert alert-success rounded-pill text-center">
+                        1.輸入訂單資料
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="alert alert-secondary rounded-pill text-center">
+                        2.金流付款
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="alert alert-secondary rounded-pill text-center">
+                        3.完成
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <div class="d-flex">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#cartdetail" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            顯示購物細節
+                                        </button>
+                                        <span class="ml-auto font-weight-bolder">$29,000</span>
+                                    </div>
+                                </h2>
+                            </div>
+
+                            <div id="cartdetail" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="w-25 px-0"></th>
+                                                <th class="px-0">商品名稱</th>
+                                                <th class="w-100px px-0">數量</th>
+                                                <th class="w-100px px-0">小計</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/988/1920/1080"
+                                                        class="w-100 img-thumbnail">
+                                                </td>
+                                                <td class="align-middle h6 px-0">玉山</td>
+                                                <td class="align-middle h6 px-0">兩人</td>
+                                                <td class="align-middle text-right h6 px-0">$26,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="text-right px-0 h6"><i
+                                                        class="far fa-compass mr-1 fa-spin"></i>導遊小費</td>
+                                                <td class="text-right px-0 h6">$3,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="text-right px-0 h6">合計</td>
+                                                <td class="text-right px-0 h6">$29,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 表單驗證 -->
+                    <form class="needs-validation mt-3" novalidate>
+                        <h3 class='bg-light text-center'>訂購人資訊</h3>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name">姓名</label>
+                                <input type="text" class="form-control" id="name" required placeholder="請輸入姓名...">
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom02">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="請輸入email..." required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="country">國家</label>
+                                <select name="country" id="country" class="custom-select">
+                                    <option value="taiwan">台灣</option>
+                                    <option value="japan">日本</option>
+                                    <option value="china">中國</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="city">城市</label>
+                                <select name="taiwan-city" id="taiwan-city" class="custom-select">
+                                    <option value="Taipei">台北</option>
+                                    <option value="Taichung">台中</option>
+                                    <option value="Kao">高雄</option>
+                                </select>
+                                <select name="japan-city" id="japan-city" class="custom-select d-none">
+                                    <option value="tokoyo">東京</option>
+                                    <option value="kyto">京都</option>
+                                    <option value="Hokkaido">北海道</option>
+                                </select>
+                                <select name="china-city" id="china-city" class="custom-select d-none">
+                                    <option value="beji">北京</option>
+                                    <option value="nanji">南京</option>
+                                    <option value="tienji">天津</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="zip">郵遞區號</label>
+                                <input type="text" class="form-control" id="zip" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label for="adress">地址</label>
+                                <input type="text" class="form-control" placeholder="請輸入地址..">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mt-2">
+                            <button class="btn btn-secondary mr-2" type="button">繼續選購</button>
+                            <button class="btn btn-primary" type="submit">確認付款</button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="container my-5">
+            <h1 class="text-secondary text-center mb-3">結帳完成</h1>
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="alert alert-success rounded-pill text-center">
+                        完成
+                    </div>
+                    <h3 class="text-center my-3">購買資訊</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="w-25 px-0"></th>
+                                        <th class="px-0">商品名稱</th>
+                                        <th class="w-100px px-0">數量</th>
+                                        <th class="w-100px px-0">小計</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="https://picsum.photos/id/988/1920/1080"
+                                                class="w-100 img-thumbnail">
+                                        </td>
+                                        <td class="align-middle h6 px-0">玉山</td>
+                                        <td class="align-middle h6 px-0">兩人</td>
+                                        <td class="align-middle text-right h6 px-0">$26,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-right px-0 h6"><i
+                                                class="far fa-compass mr-1 fa-spin"></i>導遊小費</td>
+                                        <td class="text-right px-0 h6">$3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-right px-0 h6">合計</td>
+                                        <td class="text-right px-0 h6">$29,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 mx-auto">
+                    <h3 class="text-center my-3">個人資訊</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th class="w-50">Email</th>
+                                <td class="w-50">pretty@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>姓名</th>
+                                <td>快買</td>
+                            </tr>
+                            <tr>
+                                <th>電話</th>
+                                <td>0948-541-011</td>
+                            </tr>
+                            <tr>
+                                <th>地址</th>
+                                <td>外太空火星</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-center py-5">
+        <span>@cHiWEn Corp.</span>
+        <a href="#" class="btn btn-link">instgram</a>
+        <a href="#" class="btn btn-link">facebook</a>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal fade" id="removemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="text-white">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">確認刪除</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- 國家 城市 select -->
+    <script>
+        $(document).ready(function () {
+            $('#country').change(function (e) {
+                e.preventDefault();
+                var country = $("#country").val();
+                var city = country + "-city";
+                $("select[name=" + city + "]").addClass('d-block');
+                $("select[name=" + city + "]").siblings('select').removeClass('d-block').addClass(
+                    'd-none');
+            });
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#removemodal').on('show.bs.modal', function (e) {
+                var target = $(e.relatedTarget);
+                // console.log(target);
+                var title = target.parent().next().text();
+                // console.log(title);
+                $(this).find('.modal-title').text("確認刪除 " + title + " 商品");
+
+            })
+        });
+    </script>
+
+    <!-- form 驗證 -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
